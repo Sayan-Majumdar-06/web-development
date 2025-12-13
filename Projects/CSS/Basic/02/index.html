@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: beige;
+            display: flex;
+            border: 2px solid black;
+        }
+
+        .text{
+            background-color: burlywood;
+            border: 2px solid black;
+            height: 100px;
+            width: 200px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .image{
+            border: 2px solid black;
+            margin: 10px;
+        }
+
+        @media (min-width: 640px) {
+            .container{
+                flex-direction: row;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            Hello Ji !
+        </div>
+        <div class="text">
+            Chai Pi lo !
+        </div>
+        <div class="image">
+            <img src="DrawingHands.jpg" alt="sample_img" height="400px" width="400px">
+        </div>
+    </div>
+</body>
+</html>

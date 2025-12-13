@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form 1</title>
+</head>
+<body>
+    <div>
+        <head>
+            <h1>Event Registration</h1>
+        </head>
+    </div>
+
+    <div>
+        <form>
+            <label for="name">Name:</label>
+            <br>
+            <input type="text" name="name" id="name">
+            <br>
+
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" name="email" id="email">
+            <br>
+
+            <label for="phonenumber">Phone:</label>
+            <br>
+            <input type="tel" name="phonenumber" id="phonenumber">
+            <br>
+            <br>
+
+            <label for="job">Occupation:</label>
+            <br>
+            <select name="job" id="job">
+                <option value="others">Others</option>
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+            </select>
+            <br>
+            <br>
+
+            <fieldset>
+                <legend>Topics of Interest:</legend>
+
+                <label for="html">HTML</label>
+                <input type="checkbox" name="toi" id="html">
+                <br>
+
+                <label for="javascript">JavaScript</label>
+                <input type="checkbox" name="toi" id="javascript">
+                <br>
+
+                <label for="css">CSS</label>
+                <input type="checkbox" name="toi" id="css">
+                
+            </fieldset>
+            
+            <br>
+            <br>
+
+            <label for="comments">Comments:</label>
+            <br>
+            <textarea name="comments" id="comments" rows="5" cols="50"></textarea>
+            
+            
+            <input type="submit" value="Register">
+
+        </form>
+    </div>
+</body>
+</html>

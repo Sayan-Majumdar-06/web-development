@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nav-list{
+    width: 95vw;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+}
+
+.container{
+    height: auto;
+    width: 100%;
+    overflow: none;
+    background-image: url("bg-pattern.jpg");
+    background-size: cover;
+    background-color: rgb(226, 203, 168);
+    background-blend-mode: overlay; /* Blends the color and image */
+}
+
+.nav-container{
+    background: #020024;
+    background: linear-gradient(16deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgb(0, 157, 188) 100%);
+    color: white;
+    width: 100%;
+    min-height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-links{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+    font-family:monospace;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;    
+    text-shadow: 1px 1px 10px rgb(255, 255, 255);
+    transition: all;
+    transition-duration: 0.1s;
+}
+
+a:hover{
+    color:#04045c;
+    text-shadow: none;
+}
+
+#logo{
+    font-size: 2.5rem;
+    font-family: fantasy;
+    text-shadow: 1px 1px 20px rgb(255, 255, 255);
+}
+
+.content-box {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+}
+
+.recipe-card {
+    border-radius: 1.5rem;
+    background-image: url("bg-pattern.jpg");
+    background-size: cover;
+    background-color:rgb(216, 166, 39);
+    background-blend-mode: overlay; /* Blends the color and image */
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px;
+    box-shadow: 10px 10px 15px black;
+    padding: 4rem;
+}
+
+.recipe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recipe h2{
+    font-family: "Changa One", sans-serif;
+    font-weight: 200;
+    font-size: 3rem;
+    font-style: normal;
+}
+
+.recipe h3{
+    font-family: "Geologica", sans-serif;
+    font-size: 1.5rem;
+}
+
+.recipe li{
+    font-family: "Caveat", cursive;
+    font-size: 1.5rem;
+}
+
+.recipe-image img{
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px black;
+    transition: all;
+    transition-duration: 0.2s;
+}
+
+.recipe-image img:hover{
+    scale: 1.05;
+}
+
+.footer-box{
+    background-color: #020024;
+    color: white;
+    padding-left: 1rem;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#copyright-text{
+    font-size: 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

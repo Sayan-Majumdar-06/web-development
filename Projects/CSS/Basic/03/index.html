@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            background-color: beige;
+            height: 800px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: aquamarine;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            width: 500px;
+            animation: 10s ease-in 0s alternate infinite none shadowAnimate;
+        }
+
+        @keyframes shadowAnimate{
+            0%{
+                box-shadow: 0px 0px 35px 10px red;
+            }
+            25%{
+                box-shadow: 0px 0px 35px 10px green;
+            }
+            75%{
+                box-shadow: 0px 0px 35px 10px blue;
+            }
+            100%{
+                box-shadow: 0px 0px 35px 10px purple;
+            }
+        }
+
+        #head1{
+            text-shadow: 2px 2px 1px gray, -1px -1px 5px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1 id="head1">Welcome to CodeHelp</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi aliquid cum, eum sed sint ipsam voluptas esse necessitatibus porro nobis minus. Nihil fugit ullam earum rem illum voluptatibus quaerat neque, omnis, totam unde qui, asperiores possimus. Dolorem enim accusantium animi assumenda culpa, incidunt esse, sapiente impedit, eligendi id quod officiis ex? Doloremque repellendus quod culpa repellat quidem! A sit repellat illum voluptas, distinctio voluptatibus praesentium beatae dolor quaerat sint provident blanditiis eligendi nam voluptates rem et culpa pariatur numquam soluta labore illo rerum facere, aliquid ut. Dignissimos quos numquam, explicabo culpa recusandae fugiat in eligendi quisquam error, harum corporis deserunt.</p>
+        </div>
+    </div>
+</body>
+</html>
