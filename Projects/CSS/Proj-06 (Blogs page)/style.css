@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(237, 226, 213);
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{ 
+    padding: 4rem 2rem;
+    max-width: 85%;
+    margin: 0 auto;
+    background-color: rgb(192, 161, 124);
+    background-image: url(moroccan-flower.png);
+    background-blend-mode: overlay;
+}
+
+.header-container{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-title{
+    margin-bottom: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(64, 64, 64);
+}
+
+.header-desc{
+    max-width: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(114, 112, 112);
+}
+.main-container{
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 4rem 2rem;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 243, 213);
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px gray;
+}
+
+.card-image-container{
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+}
+
+.card-image {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.card-container:hover .card-image{
+    scale: 1.2
+}
+
+.card-text-container{
+    padding: 1.2rem 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+
+.card-title {
+    color: rgb(93, 92, 92);
+    font-size: 1rem;
+}
+
+.card-title:hover{
+    color: rgba(93, 92, 92, 0.626);
+}
+
+.card-desc{
+    color: rgb(128, 126, 126);
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.card-footer-container{
+    height: 7%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-author-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.2rem;
+    align-items: center;
+}
+
+.avatar-container{
+    width: 2rem;
+    height: 2rem;
+}
+
+.avatar-container img{
+    height: 100%;
+    background-color: rgb(158, 251, 220);
+    border-radius: 20px;
+}
+
+.author-info-container{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    max-width: 5.5rem;
+}
+
+.author-name{
+    color: rgb(118, 6, 224);
+    font-size: 0.9rem;
+}
+
+.author-date{
+    color: rgb(100, 99, 99);
+    font-size: 0.7rem;
+}
+
+.card-tag-container{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(173, 171, 171);
+    border-radius: 5px;
+    padding: 0 0.5rem;
+    color: rgb(135, 134, 134);
+    font-size: 0.9rem;
+}
+
+@media (max-width:1090px) {
+    .container{
+        max-width: 95%;
+    }
+    .main-container{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:970px) {
+    .container{
+        max-width: 100%;
+    }
+}
+
+@media (max-width:800px) {
+    .main-container{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:570px) {
+    .main-container{
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
