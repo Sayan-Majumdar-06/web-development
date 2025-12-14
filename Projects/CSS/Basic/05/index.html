@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transforms</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            height: 100%;
+        }
+
+        .container{
+            padding: 4rem;
+            height: 100%;
+            width: 100%;
+            gap: 2rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            background-color: beige;
+        }
+
+        .item{
+            color: white;
+            padding: 5rem;
+            background-color: brown;
+            height: 250px;
+            width: 250px;
+            border: 2px solid black;
+        }
+
+        .rotateX:hover{
+            transform: rotateX(30deg);
+        }
+
+        .rotateY:hover{
+            transform: rotateY(30deg);
+        }
+
+        .rotateZ:hover{
+            transform: rotateZ(30deg);
+        }
+
+        .translateX:hover{
+            transform: translateX(100px);
+        }
+
+        .translateY:hover{
+            transform: translateY(100px);
+        }
+
+        .translateZ:hover{
+            transform: perspective(300px) translateZ(100px);
+        }
+
+        .scaleX:hover{
+            transform: scaleX(1.5);
+        }
+
+        .scaleY:hover{
+            transform: scaleY(1.5);
+        }
+
+        .scaleZ:hover{
+            transform: perspective(300px) rotateY(45deg) scaleZ(5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item rotateX">rotateX</div>
+        <div class="item rotateY">rotateY</div>
+        <div class="item rotateZ">rotateZ</div>
+        <div class="item translateX">translateX</div>
+        <div class="item translateY">translateY</div>
+        <div class="item translateZ">translateZ</div>
+        <div class="item scaleX">scaleX</div>
+        <div class="item scaleY">scaleY</div>
+        <div class="item scaleZ">scaleZ</div>
+    </div>
+</body>
+</html>
