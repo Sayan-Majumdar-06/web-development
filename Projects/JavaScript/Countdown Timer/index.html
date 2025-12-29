@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="countdown-container">
+            <h1 id="countdown-heading">Countdown Timer</h1>
+
+            <div id="countdown">
+                <div class="countdown-block">
+                    <span id="countdown-days" class="countdown-timer">0</span>
+                    <span>Days</span>
+                </div>
+                <div class="countdown-block">
+                    <span id="countdown-hours" class="countdown-timer">0</span>
+                    <span>Hours</span>
+                </div>
+                <div class="countdown-block">
+                    <span id="countdown-minutes" class="countdown-timer">0</span>
+                    <span>Minutes</span>
+                </div>
+                <div class="countdown-block">
+                    <span id="countdown-seconds" class="countdown-timer">0</span>
+                    <span>Seconds</span>
+                </div>
+            </div>
+
+            <h2 id="progress-heading">Progress : </h2>
+
+            <div class="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+        </div>
+
+        <div class="set-timer-container">
+            <form class="set-timer-form">
+                <div class="setEndDate">
+                    <label for="endDate">Set End Date : </label>
+                    <input type="date" name="endDate" id="endDate">
+                </div>
+
+                <div class="setEndTime">
+                    <label for="endTime">Set End Time : </label>
+                    <input type="time" name="endTime" id="endTime">
+                </div>
+                
+                <input type="submit" id="start-timer-button" value="Start Countdown">
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
