@@ -37,8 +37,6 @@ function handleSubmit(event) {
         let pendingTime = endTime - now;
         let totalTime = endTime - startTime;
 
-        console.log(pendingTime);
-
         if(pendingTime <= 10000) { 
             day_timer.style.color = "red";
             hours_timer.style.color = "red";
