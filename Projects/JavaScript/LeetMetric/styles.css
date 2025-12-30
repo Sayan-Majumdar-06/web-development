@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(4, 40, 45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 60%;
+    max-width: 600px;
+    background-color: rgba(0, 91, 248, 0.162);
+    color: white;
+    padding: 1.4rem;
+    border: 2px solid white;
+    font-family:monospace;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h1{
+    font-size: xxx-large;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#user-data-form{
+    display: flex;
+    width: 100%;
+    gap: 0.7rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#username-label{
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+#username-input{
+    font-size: 0.9rem;
+    font-family: monospace;
+    color: white;
+    width: 80%;
+    background-color: rgb(15, 43, 68);
+    border: 2px solid white;
+    padding: 0.6rem;
+}
+
+#search-button{
+    font-size: 1rem;
+    font-family: monospace;
+    color: white;
+    background-color: rgb(123, 64, 9);
+    border: 2px solid white;
+    padding: 0.5rem 1rem;
+}
+
+.user-stats{
+    margin-top: 1rem;
+    display: none;
+    flex-direction: column;
+}
+
+.metric-pies{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.circle{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 1.2rem;
+    border: 4px solid rgb(255, 255, 255);
+    background: conic-gradient(rgba(103, 174, 189, 0.621) var(--progress-degree, 0%), rgba(95, 98, 95, 0.538) 0%);
+}
+
+.circle span{
+    z-index: 2;
+}
+
+.metric-boxes{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.stat-card{
+    font-size: 1.2rem;
+    background-color: rgb(11, 138, 138);
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 44%;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetMetric</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LeetMetric</h1>
+
+        <div class="user-data">
+            <form id="user-data-form">
+                <label for="username" id="username-label">Enter LeetCode Username : </label>
+                <input type="text" name="username" placeholder="Enter Username" id="username-input">
+                <button id="search-button">Search</button>
+            </form>
+        </div>
+
+        <div class="user-stats">
+            <div class="metric-pies">
+                <div class="metric-pie easy">
+                    <div class="easy-pie circle">
+                        <span id="easy-label"></span>
+                        <p>Easy</p>
+                    </div>
+                </div>
+                
+                <div class="metric-pie medium">
+                    <div class="medium-pie circle">
+                        <span id="medium-label"></span>
+                        <p>Medium</p>
+                    </div>
+                </div>
+
+                <div class="metric-pie hard">
+                    <div class="hard-pie circle">
+                        <span id="hard-label"></span>
+                        <p>Hard</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="metric-boxes">
+                <!-- Populate using JS -->
+            </div>
+        
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
