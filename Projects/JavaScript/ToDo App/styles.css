@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    background-color: rgb(164, 191, 191);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.todo-container{
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1rem 1rem;
+    border-radius: 7px;
+}
+
+.task-adder{
+    background-color:rgb(245, 196, 150);
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 7px;
+}
+
+.task-add-input{
+    height: 1.7rem;
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+    padding: 0.7rem;
+}
+
+.add-task-btn{
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.todo-list{
+    display: none;
+    background-color: aliceblue;
+    width: 100%;
+    padding: 1rem;
+}
+
+.task-list{
+    width: 100%;
+    list-style-type:none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.task-list li{
+    width: 100%;
+    background-color: blanchedalmond;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    gap: 1rem;
+}
+
+.task-text{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.delete-btn{
+    border: none;
+    color: white;
+    background-color: rgb(238, 137, 91);
+    border-radius: 5px;
+    padding: 0.3rem 0.5rem;
+}
