@@ -2,7 +2,7 @@
 
     This repository contains my learning and practice work while studying web development.
     
-    It mainly includes small HTML, CSS and JavaScript projects built to understand layouts, styling, responsive design, and basic to intermediate JavaScript concepts.
+    It mainly includes basic to intermediate HTML, CSS, JavaScript and Tailwind CSS projects built to understand layouts, styling, responsive design, and JavaScript concepts.
 
 ## Technologies & Concepts Covered
 
@@ -23,6 +23,11 @@
       - Async/Await
       - Basic API calls
 
+    - Tailwind CSS
+      - Utility-first styling
+      - Responsive design using Tailwind breakpoints
+      - Rapid prototyping without writing custom CSS
+
 ## Folder Structure
 
     web-development/
@@ -34,6 +39,8 @@
     │   └── HTML/
     |   |
     |   └── JavaScript/
+    |   |
+    |   └── Tailwind/
     |
     ├── Important Notes/
     |
@@ -42,6 +49,5 @@
 ## Notes
 
     This repository is meant for learning and consistency.
-    
     Projects may be simple and iterative, and will improve over time as I learn more technologies.
 
