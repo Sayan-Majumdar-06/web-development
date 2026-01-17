@@ -4,7 +4,7 @@ import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Snippits from './components/Snippits'
 import ViewSnippits from './components/ViewSnippits'
-import NotFound from './components/Notfound'
+import NotFound from './components/NotFound'
 
 function App() {
 
