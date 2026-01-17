@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Zen Dots", sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(1, 1, 22);
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.game-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 700px;
+    gap: 2rem;
+    background-color: rgb(1, 1, 22);
+    min-width: 500px;
+}
+
+.o-score,.x-score{
+    color: white;
+    padding: 2rem;
+    background-color: rgb(1, 1, 22);
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid white;
+    font-size: 2rem;
+    transition: box-shadow 0.5s ease;
+}
+
+.o-score{
+    box-shadow: 0px 0px 35px purple;
+}
+
+.o-score p, .x-score p{
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.winner-text{
+    margin-top: 1rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.game-grid{
+    margin: 2rem 2rem 0 2rem;
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.5rem;
+    background-color: rgb(223, 215, 215);
+}
+
+.box{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 1, 22);
+    font-weight: 700;
+    font-size: 5rem;
+    transition: box-shadow 0.5s ease;
+}
+
+.box:hover{
+    box-shadow: inset 0px 0px 15px white;
+}
+
+.game-controls{
+    margin-top: 1rem;
+    background-color: rgb(1, 1, 22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset-btn{
+    font-family: "Zen Dots", sans-serif;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: 2px solid white;
+    background-color: rgb(1, 1, 22);
+    transition: background-color 0.5s ease;
+}
+
+.reset-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+
